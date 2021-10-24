@@ -1,15 +1,79 @@
 .logo
-
+  width: 100%
+  height: 100%
+  object-fit: cover
 .header
   &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__logo
+    display: block
+    width: 128px
+    height: 58px
   &-search
-    &_input
+    width: 620px
+    padding: 13px 20px
+    background: #EEEEEE
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-radius: 10px
+    &__input
+      width: 100%
+      border: none
+      background: transparent
+      outline: none
     &__submit
+      margin-left: 20px
+      width: 22px
+      height: 22px
+      border: none
+      background: transparent
+      background-image: url('../img/icon-search.svg')
+      background-repeat: no-repeat
+      background-size: contain
+      cursor: pointer
   &-buttons
+    display: flex
+    align-items: center
     &__login
+      padding: 16px 30px
+      margin-right: 30px
+      font-weight: normal
+      font-size: 14px
+      line-height: 16px
+      border-radius: 50px
+      font-weight: 500
+      border: none
+      cursor: pointer
+      background: #EBEBEB
     &__cart
+      background: #F66A15
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      background-image: url('../img/icon-shopping-cart.svg')
+      background-repeat: no-repeat
+      background-size: 24px
+      background-position: center
+      cursor: pointer
+      
+
 
 .cart
+  position: relative
   &__counter
+    // display: none
+    // visibility: hidden
+    position: absolute
+    bottom: -5px
+    right: 0
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    font-size: 8px
+    line-height: 18px
+    text-align: center
+    background: #FFAF19
 

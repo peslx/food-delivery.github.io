@@ -6,7 +6,6 @@
 .container {
   margin: 0 auto;
   max-width: 1190px;
-  background: tomato;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -346,4 +345,98 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  width: 128px;
+  height: 58px;
+}
+
+.header-search {
+  width: 620px;
+  padding: 13px 20px;
+  background: #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.header-search__input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.header-search__submit {
+  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons__login {
+  padding: 16px 30px;
+  margin-right: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background: #EBEBEB;
+}
+
+.header-buttons__cart {
+  background: #F66A15;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../img/icon-shopping-cart.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart__counter {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 8px;
+  line-height: 18px;
+  text-align: center;
+  background: #FFAF19;
 }
