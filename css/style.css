@@ -440,3 +440,104 @@ template {
   text-align: center;
   background: #FFAF19;
 }
+
+.hero-slider {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  z-index: 0;
+}
+
+.hero-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.hero-slide__container {
+  width: 100%;
+  height: 400px;
+  padding: 76px 100px;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(.png);
+}
+
+.hero-slide__text {
+  max-width: 400px;
+}
+
+.hero-slide__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.hero-slide__description {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.hero-slide__order {
+  margin: 0;
+  padding: 13px 52px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #FFFFFF;
+  background: #F47322;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: 40px;
+  right: 46px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EBEBEB80;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .2s ease-in-out;
+}
+
+.slider-button--prev {
+  right: 100px;
+}
+
+.summer {
+  background-image: url("../img/hero/summer_vegetables_week.png");
+}
+
+.vitamin {
+  background-image: url("../img/hero/vitamin_week.png");
+}
+
+.autumn {
+  background-image: url("../img/hero/autumn_vegetables_week.png");
+}
+
+@media screen and (min-width: 992px) {
+  .slider-button:hover {
+    background-color: #EBEBEBdd;
+  }
+}

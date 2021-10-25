@@ -2,12 +2,14 @@ $(document).ready(function () {
   // Инициализация слайдера => //
   const heroSlider = new Swiper(".hero-slider", {
     // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 20,
     direction: "horizontal",
     loop: true,
 
     navigation: {
-      nextEl: ".hero-slider__button--next",
-      prevEl: ".hero-slider__button--prev",
+      nextEl: ".slider-button--next",
+      prevEl: ".slider-button--prev",
     },
   });
   // <= Инициализация слайдера //
