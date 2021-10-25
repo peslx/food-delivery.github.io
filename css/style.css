@@ -626,8 +626,111 @@ template {
   line-height: 23px;
 }
 
+.week-wrap {
+  padding-bottom: 100px;
+}
+
+.week__title {
+  margin: 0;
+  margin-bottom: 47px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+}
+
+.week-container {
+  margin: -15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.week-card {
+  margin: 0;
+  padding: 0;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.week-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.week-card__label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 30px;
+  background: lightgrey;
+}
+
+.week__card {
+  margin: 15px;
+}
+
+.healthy {
+  color: #49494F;
+  background: #D0FD89;
+}
+
+.vegetables {
+  color: #FFFFFF;
+  background: #AEBC41;
+}
+
+.meet {
+  color: #FFFFFF;
+  background: #B86B78;
+}
+
+.bird {
+  color: #FFFFFF;
+  background: #D68334;
+}
+
+.fish {
+  color: #FFFFFF;
+  background: #CD6255;
+}
+
+.kids {
+  color: #49494F;
+  background: #FFFDBF;
+}
+
+.parents {
+  color: #49494F;
+  background: #F6FDC8;
+}
+
+.celebrations {
+  color: #49494F;
+  background: #FEF7FE;
+}
+
 @media screen and (min-width: 992px) {
   .slider-button:hover {
     background-color: #EBEBEBdd;
+  }
+  .week-card__img {
+    transition: transform .3s ease-in-out;
+  }
+  .week-card__img:hover {
+    transform: scale(1.09);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
