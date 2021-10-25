@@ -1,3 +1,72 @@
 .promo
   &-wrap
+    display: flex
+    justify-content: space-between
+    margin: 0 -25px
+    padding-bottom: 110px
+  &-card
+    position: relative
+    display: flex
+    flex-basis: 50%
+    // width: 570px
+    margin: 0 25px
+    height: 380px
+    background: silver
+    border-radius: 20px
+    overflow: hidden
+    &__img
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: 0
+    &__content
+      width: 100%
+      height: 100%
+      padding: 36px
+      z-index: 1
+      color: $wh
+      font-family: $roboto
+      font-style: normal
+      font-weight: 500
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(.png)
+      display: flex
+      flex-direction: column
+      justify-content: space-between  
+    &__title
+      margin: 0
+      margin-bottom: 21px
+      font-size: 24px
+      line-height: 23px
+    &__description
+      margin: 0
+      font-size: 16px
+      line-height: 23px
+    &__button
+      border: none
+      background: $wh
+      color: #5F5F61
+      border-radius: 50px
+      padding: 13px 52px
+      font-weight: 500
+      font-size: 16px
+      line-height: 23px
+      margin-top: 25px
+      cursor: pointer
+
+.card
+  &-top
+    max-width: 200px
+  &-bottom
+  &-price
+    display: flex
+    flex-direction: column
+    &__minimum
+      font-weight: 500
+      font-size: 24px
+      line-height: 23px
+      margin-bottom: 8px
+    &__delivery
+      font-size: 16px
+      line-height: 23px
   
