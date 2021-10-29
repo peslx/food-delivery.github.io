@@ -863,6 +863,76 @@ template {
   cursor: pointer;
 }
 
+.advantages {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: #E5E5E5;
+}
+
+.advantages-title {
+  margin: 0;
+  margin-bottom: 52px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+}
+
+.advantages-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row  wrap;
+}
+
+.advantages-card {
+  min-width: 270px;
+  max-width: 270px;
+  height: 310px;
+  max-height: 310px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 18px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.advantages-card__img {
+  margin-top: 5px;
+  width: 60px;
+  height: 60px;
+  object-fit: 100%;
+  margin-bottom: 34px;
+}
+
+.advantages-card__title {
+  max-width: 190px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.advantages-card__text {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #49494F;
+  overflow-y: auto;
+}
+
 @media screen and (min-width: 992px) {
   .slider-button:hover {
     background-color: #EBEBEBdd;
