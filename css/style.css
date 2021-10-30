@@ -651,6 +651,7 @@ template {
   margin: 0;
   padding: 0;
   max-width: 275px;
+  min-width: 275px;
   height: 182px;
   border-radius: 18px;
   overflow: hidden;
@@ -1019,8 +1020,10 @@ template {
   .card-bottom {
     max-width: 245px;
   }
-  .week-card {
-    flex-basis: 21%;
+  .week__card {
+    max-width: none;
+    min-width: 0;
+    width: 20%;
   }
 }
 
@@ -1199,6 +1202,9 @@ template {
   }
   .promo-card__content {
     min-height: 385px;
+  }
+  .week-wrap {
+    padding-bottom: 44px;
   }
   .week__title {
     max-width: 80%;
