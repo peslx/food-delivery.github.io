@@ -650,13 +650,14 @@ template {
 .week-card {
   margin: 0;
   padding: 0;
-  width: 275px;
+  max-width: 275px;
   height: 182px;
   border-radius: 18px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   border: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .week-card__img {
@@ -1018,6 +1019,9 @@ template {
   .card-bottom {
     max-width: 245px;
   }
+  .week-card {
+    flex-basis: 21%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1046,6 +1050,24 @@ template {
   }
   .slider__button {
     background-color: #EBEBEBDD;
+  }
+  .week-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .week__title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 45px;
+    max-width: 350px;
+  }
+  .week-container {
+    justify-content: center;
+  }
+  .week-card {
+    flex-basis: 29%;
   }
 }
 
@@ -1121,6 +1143,10 @@ template {
     font-size: 16px;
     line-height: 23px;
   }
+  .week-card {
+    flex-basis: 44%;
+    max-width: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1157,6 +1183,7 @@ template {
   }
   .promo-wrap {
     flex-direction: column;
+    padding-bottom: 69px;
   }
   .promo-card {
     min-height: 380px;
@@ -1172,5 +1199,25 @@ template {
   }
   .promo-card__content {
     min-height: 385px;
+  }
+  .week__title {
+    max-width: 80%;
+  }
+  .week-card {
+    flex-basis: 100%;
+    min-width: 257px;
+    max-width: 80%;
+    overflow: hidden;
+  }
+  .week-card__img {
+    width: 100%;
+    height: auto;
+    margin-top: -25%;
+  }
+  .week-card__label {
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
   }
 }
