@@ -8,8 +8,8 @@ $(document).ready(function () {
     loop: true,
 
     navigation: {
-      nextEl: ".slider-button--next",
-      prevEl: ".slider-button--prev",
+      nextEl: ".slider__button--next",
+      prevEl: ".slider__button--prev",
     },
   });
   // <= Инициализация слайдера //

@@ -2,7 +2,7 @@
 // Hover-affects
 @media screen and (min-width: 992px) 
   .slider
-    &-button
+    &__button
       &:hover
         background-color: #EBEBEBdd
   .week
@@ -12,3 +12,412 @@
         &:hover
           transform: scale(1.09)
           box-shadow: 0 4px 10px rgba(0,0,0,0.5)
+
+
+// MEDIA FOR 1200
+@media screen and (max-width: 1200px)
+  .container
+    max-width: 1100px
+    padding: 0 13px
+  .header
+    padding: 15px 0
+    &__logo
+      min-width: 128px
+    &__search
+      max-width: 355px
+  .hero
+    &-slider
+    &-slide
+      &__container
+        padding: 76px 68px
+      &__text
+      &__title
+      &__description
+      &__order
+  .slider
+    &__button
+      &--prev
+      &--next
+  .promo
+    &-wrap
+    &-card
+      &__img
+      &__content
+        padding: 54px 30px
+      &__title
+      &__description
+      &__button
+  .card
+    &-top
+      max-width: 245px
+    &-bottom
+      max-width: 245px
+    &-price
+      &__minimum
+      &__delivery
+  .week
+    &-wrap
+    &__title
+    &-container
+    &-card
+      &__img
+      &__label
+    &__card
+  .categories
+    &-wrap
+    &__title
+    &-headers
+    &__subtitle
+    &-groups
+    &-group
+      &__button
+      &__card
+  .group
+    &__wrap
+    &-card
+      &__img
+      &__content
+      &__title
+      &__description
+      &__footer
+      &__label
+      &__price
+      &__weight
+      &__button
+  .advantages
+    &-wrap
+    &-title
+    &-block
+    &-card
+      &__img
+      &__title
+      &__text
+  .footer
+    &-wrap
+    &-logo
+      &__img
+    &-links
+      &__link
+    &-socials
+      &__link
+      &__img
+
+
+// MEDIA FOR 992
+@media screen and (max-width: 992px)
+  .header
+    &__logo
+      min-width: 111px
+      max-width: 111px
+      height: 50px
+    &__search
+      margin: 0 20px
+    &-buttons
+      &__login
+        padding: 9px 18px
+        margin-right: 17px
+      &__cart
+        width: 43px
+        height: 43px
+  .hero
+    &-slider
+    &-slide
+      background-size: cocver
+      background-position-x: 80%
+      &__container
+      &__text
+      &__title
+      &__description
+        max-width: 185px
+      &__order
+  .slider
+    &__button
+      background-color: #EBEBEBDD
+      &--prev
+      &--next
+  .promo
+    &-wrap
+    &-card
+      &__img
+      &__content
+      &-top
+      &-bottom
+      &__title
+      &__description
+      &__button
+  .card
+    &-top
+    &-bottom
+    &-price
+      &__minimum
+      &__delivery
+  .week
+    &-wrap
+    &__title
+    &-container
+    &-card
+      &__img
+      &__label
+    &__card
+  .categories
+    &-wrap
+    &__title
+    &-headers
+    &__subtitle
+    &-groups
+    &-group
+      &__button
+      &__card
+  .group
+    &__wrap
+    &-card
+      &__img
+      &__content
+      &__title
+      &__description
+      &__footer
+      &__label
+      &__price
+      &__weight
+      &__button
+  .advantages
+    &-wrap
+    &-title
+    &-block
+    &-card
+      &__img
+      &__title
+      &__text
+  .footer
+    &-wrap
+    &-logo
+      &__img
+    &-links
+      &__link
+    &-socials
+      &__link
+      &__img
+
+
+// MEDIA FOR 768
+@media screen and (max-width: 768px)
+  .header
+    &__logo
+    &__search
+    &-buttons
+      &__login
+      &__cart
+  .hero
+    &-slider
+    &-slide
+      &__container
+        height: 491px
+        padding: 84px 40px
+      &__text
+        max-width: 320px
+      &__title
+        font-size: 40px
+        line-height: 44px
+      &__description
+        font-size: 20px
+        line-height: 24px
+      &__order
+        padding: 8px 21px
+        font-size: 13px
+        line-height: 16px
+  .slider
+    &__button
+      width: 40px
+      height: 40px
+      bottom: 15px
+      right: 15px
+      &--prev
+        right: 72px
+      &--next
+  .promo
+    &-wrap
+      margin: 0
+    &-card
+      margin: 0
+      max-width: 350px
+      &:nth-child(1)
+        margin-right: 10px
+      &:nth-child(2)
+        margin-left: 10px
+      &__img
+      &__content
+        padding: 67px 30px
+      &__title
+        font-size: 24px
+        line-height: 23px
+      &__description
+        font-size: 16px
+        line-height: 23px
+      &__button
+        padding: 13px
+        max-width: 245px
+        width: 100%
+        font-size: 14px
+        line-height: 18px
+  .card
+    &-top
+    &-bottom
+      padding-top: 21px
+    &-price
+      &__minimum
+        font-size: 30px
+        line-height: 30px
+      &__delivery
+        font-size: 16px
+        line-height: 23px
+  .week
+    &-wrap
+    &__title
+    &-container
+    &-card
+      &__img
+      &__label
+    &__card
+  .categories
+    &-wrap
+    &__title
+    &-headers
+    &__subtitle
+    &-groups
+    &-group
+      &__button
+      &__card
+  .group
+    &__wrap
+    &-card
+      &__img
+      &__content
+      &__title
+      &__description
+      &__footer
+      &__label
+      &__price
+      &__weight
+      &__button
+  .advantages
+    &-wrap
+    &-title
+    &-block
+    &-card
+      &__img
+      &__title
+      &__text
+  .footer
+    &-wrap
+    &-logo
+      &__img
+    &-links
+      &__link
+    &-socials
+      &__link
+      &__img
+
+
+// MEDIA FOR 576
+@media screen and (max-width: 576px)
+  .container
+    max-width: 1100px
+    padding: 0 2px
+  .header
+    padding: 7px 0
+    &__logo
+      min-width: 100px
+      max-width: 100px
+      height: 47px
+    &-search
+      display: none
+  .hero
+    &-slider
+      margin-top: 5px
+      margin-bottom: 20px
+    &-slide
+      &__container
+        padding: 95px 13px
+      &__text
+      &__title
+        font-size: 32px
+        line-height: 30px
+      &__description
+        font-size: 17px
+        line-height: 23px
+        margin-bottom: 62px
+      &__order
+  .slider
+    &__button
+      &--prev
+      &--next
+  .promo
+    &-wrap
+      flex-direction: column
+    &-card
+      min-height: 380px
+      &:nth-child(1)
+        margin-right: 0
+      &:nth-child(2)
+        margin-left: 0
+        margin-top: 20px
+      width: 100%
+      max-width: none
+      &__img
+      &__content
+        min-height: 385px
+      &__title
+      &__description
+      &__button
+  .card
+    &-top
+    &-bottom
+    &-price
+      &__minimum
+      &__delivery
+  .week
+    &-wrap
+    &__title
+    &-container
+    &-card
+      &__img
+      &__label
+    &__card
+  .categories
+    &-wrap
+    &__title
+    &-headers
+    &__subtitle
+    &-groups
+    &-group
+      &__button
+      &__card
+  .group
+    &__wrap
+    &-card
+      &__img
+      &__content
+      &__title
+      &__description
+      &__footer
+      &__label
+      &__price
+      &__weight
+      &__button
+  .advantages
+    &-wrap
+    &-title
+    &-block
+    &-card
+      &__img
+      &__title
+      &__text
+  .footer
+    &-wrap
+    &-logo
+      &__img
+    &-links
+      &__link
+    &-socials
+      &__link
+      &__img
