@@ -1226,6 +1226,16 @@ template {
     letter-spacing: -.4px;
     height: 7em;
   }
+  .footer-logo {
+    width: 161px;
+    height: 78px;
+  }
+  .footer-links {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1290,11 +1300,9 @@ template {
     min-width: 257px;
     max-width: 80%;
     overflow: hidden;
-  }
-  .week-card__img {
-    width: 103%;
-    height: auto;
-    margin-top: -25%;
+    min-height: 180px;
+    height: 40%;
+    max-height: 250px;
   }
   .week-card__label {
     top: auto;
@@ -1357,5 +1365,46 @@ template {
     max-width: 330px;
     height: auto;
     max-height: 100%;
+  }
+  .footer-wrap {
+    padding: 40px 20px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer-logo {
+    width: 161px;
+    height: 78px;
+    margin-right: 30px;
+    order: -3;
+  }
+  .footer-links {
+    flex-basis: 65%;
+    padding: 0;
+    margin-right: 30px;
+    height: 78px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .footer-links__link {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer-socials {
+    order: -1;
+    min-width: 130px;
+    padding: 0;
+    padding-top: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-socials__link {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .footer-socials__link:last-child {
+    margin: 0;
   }
 }
