@@ -642,7 +642,7 @@ template {
 
 .week-container {
   max-width: 100%;
-  margin: -15px;
+  margin: -10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -682,7 +682,7 @@ template {
 }
 
 .week__card {
-  margin: 15px;
+  margin: 10px;
 }
 
 .healthy {
@@ -730,8 +730,7 @@ template {
 }
 
 .categories-wrap {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding: 80px 0;
 }
 
 .categories__title {
@@ -947,7 +946,7 @@ template {
 }
 
 .footer-wrap {
-  padding: 40px 0;
+  padding: 40px 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
