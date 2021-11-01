@@ -75,11 +75,16 @@
     &-group
       &__button
       &__card
+        margin-left: 20px
+        &:first-child
+          margin-left: 0
+        
   .group
     &__wrap
     &-card
       &__img
       &__content
+        padding: 21px 15px
       &__title
       &__description
       &__footer
@@ -91,7 +96,14 @@
     &-wrap
     &-title
     &-block
+      flex-wrap: wrap
+      justify-content: space-around
+    &__card
+      // margin: 10px
     &-card
+      flex-basis: 23%
+      min-width: 221px
+      max-width: 330px
       &__img
       &__title
       &__text
@@ -178,7 +190,10 @@
   .categories
     &-wrap
     &__title
+      text-align: center
     &-headers
+      justify-content: center
+      justify-content: space-evenl
     &__subtitle
     &-groups
     &-group
@@ -187,6 +202,9 @@
   .group
     &__wrap
     &-card
+      &:nth-child(n+4)
+        display: none
+        
       &__img
       &__content
       &__title
@@ -199,8 +217,15 @@
   .advantages
     &-wrap
     &-title
+      text-align: center
     &-block
+    &__card
+      margin: 20px
     &-card
+      flex-basis: 45%
+      min-width: 221px
+      max-width: 330px
+      height: 280px
       &__img
       &__title
       &__text
@@ -299,15 +324,23 @@
   .categories
     &-wrap
     &__title
+      text-align: center
     &-headers
+      justify-content: center
+      justify-content: space-evenly
     &__subtitle
+      margin: 0
     &-groups
     &-group
       &__button
       &__card
   .group
     &__wrap
+      justify-content: space-evenly
     &-card
+      max-width: 47%
+      &:nth-child(n+3)
+        display: none
       &__img
       &__content
       &__title
@@ -322,9 +355,16 @@
     &-title
     &-block
     &-card
+      flex-basis: 42%
+      min-width: 221px
+      max-width: 330px
+      height: auto
+      max-height: 100%
       &__img
       &__title
       &__text
+        letter-spacing: -.4px
+        height: 7em
   .footer
     &-wrap
     &-logo
@@ -406,7 +446,7 @@
       max-width: 80%
       overflow: hidden
       &__img
-        width: 100%
+        width: 103%
         height: auto
         margin-top: -25%
       &__label
@@ -418,15 +458,37 @@
   .categories
     &-wrap
     &__title
+      font-size: 28px
+      line-height: 32px
+      text-align: center
+      margin-bottom: 30px
     &-headers
+      flex-direction: column
+      align-items: center
     &__subtitle
+      text-align: center
+      margin: 0
+      margin-bottom: 5px
+      font-size: 19px
+      line-height: 23px
     &-groups
+      padding-top: 0px
     &-group
       &__button
+        padding: 15px
+        margin-top: 50px
+        width: 250px
       &__card
+        margin: 0
+        margin-top: 20px
   .group
     &__wrap
+      flex-direction: column
+      align-items: center
     &-card
+      flex-basis: 100%
+      width: 80%
+      max-width: 310px
       &__img
       &__content
       &__title
@@ -437,10 +499,20 @@
       &__weight
       &__button
   .advantages
+    padding-top: 50px
+    padding-bottom: 50px
     &-wrap
     &-title
+      font-size: 28px
+      line-height: 32px
     &-block
+      padding-top: 20px
     &-card
+      flex-basis: 100%
+      min-width: 221px
+      max-width: 330px
+      height: auto
+      max-height: 100%
       &__img
       &__title
       &__text

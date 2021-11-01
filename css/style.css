@@ -641,6 +641,7 @@ template {
 }
 
 .week-container {
+  max-width: 100%;
   margin: -15px;
   display: flex;
   flex-flow: row wrap;
@@ -662,7 +663,7 @@ template {
 }
 
 .week-card__img {
-  width: 100%;
+  width: 103%;
   height: 100%;
   object-fit: cover;
 }
@@ -786,6 +787,10 @@ template {
   cursor: pointer;
 }
 
+.categories-group__card {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .group__wrap {
   width: 100%;
   display: flex;
@@ -824,6 +829,7 @@ template {
   font-size: 14px;
   line-height: 23px;
   color: #B9B9BE;
+  margin-bottom: 36px;
 }
 
 .group-card__footer {
@@ -873,7 +879,6 @@ template {
 
 .advantages-title {
   margin: 0;
-  margin-bottom: 52px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -882,6 +887,7 @@ template {
 }
 
 .advantages-block {
+  padding-top: 52px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -890,10 +896,10 @@ template {
 
 .advantages-card {
   min-width: 270px;
-  max-width: 270px;
-  height: 310px;
-  max-height: 310px;
-  padding: 25px;
+  width: 23%;
+  height: 330px;
+  max-height: 330px;
+  padding: 25px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1025,6 +1031,24 @@ template {
     min-width: 0;
     width: 20%;
   }
+  .categories-group__card {
+    margin-left: 20px;
+  }
+  .categories-group__card:first-child {
+    margin-left: 0;
+  }
+  .group-card__content {
+    padding: 21px 15px;
+  }
+  .advantages-block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .advantages-card {
+    flex-basis: 23%;
+    min-width: 221px;
+    max-width: 330px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1071,6 +1095,28 @@ template {
   }
   .week-card {
     flex-basis: 29%;
+  }
+  .categories__title {
+    text-align: center;
+  }
+  .categories-headers {
+    justify-content: center;
+    justify-content: space-evenl;
+  }
+  .group-card:nth-child(n+4) {
+    display: none;
+  }
+  .advantages-title {
+    text-align: center;
+  }
+  .advantages__card {
+    margin: 20px;
+  }
+  .advantages-card {
+    flex-basis: 45%;
+    min-width: 221px;
+    max-width: 330px;
+    height: 280px;
   }
 }
 
@@ -1150,6 +1196,36 @@ template {
     flex-basis: 44%;
     max-width: none;
   }
+  .categories__title {
+    text-align: center;
+  }
+  .categories-headers {
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .categories__subtitle {
+    margin: 0;
+  }
+  .group__wrap {
+    justify-content: space-evenly;
+  }
+  .group-card {
+    max-width: 47%;
+  }
+  .group-card:nth-child(n+3) {
+    display: none;
+  }
+  .advantages-card {
+    flex-basis: 42%;
+    min-width: 221px;
+    max-width: 330px;
+    height: auto;
+    max-height: 100%;
+  }
+  .advantages-card__text {
+    letter-spacing: -.4px;
+    height: 7em;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1216,7 +1292,7 @@ template {
     overflow: hidden;
   }
   .week-card__img {
-    width: 100%;
+    width: 103%;
     height: auto;
     margin-top: -25%;
   }
@@ -1225,5 +1301,61 @@ template {
     left: auto;
     bottom: 20px;
     right: 20px;
+  }
+  .categories__title {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .categories-headers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories__subtitle {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .categories-groups {
+    padding-top: 0px;
+  }
+  .categories-group__button {
+    padding: 15px;
+    margin-top: 50px;
+    width: 250px;
+  }
+  .categories-group__card {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .group__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .group-card {
+    flex-basis: 100%;
+    width: 80%;
+    max-width: 310px;
+  }
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advantages-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .advantages-block {
+    padding-top: 20px;
+  }
+  .advantages-card {
+    flex-basis: 100%;
+    min-width: 221px;
+    max-width: 330px;
+    height: auto;
+    max-height: 100%;
   }
 }
